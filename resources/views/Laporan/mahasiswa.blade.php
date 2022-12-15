@@ -4,9 +4,9 @@
 
 @section('content')
 
-        <html>
+    <html>
         <body>
-        <h2></h2>
+        <h1></h1>
         <div class="media">
         <img src='{{ asset("https://cdn.discordapp.com/attachments/873955007706300436/1052913723385335829/Logo-UPH-Universitas-Pelita-Harapan-Original-PNG.png") }}' alt="Logo UPH" class="img-size-50 img-circle mr-10"> 
         <div class="media-body">
@@ -63,4 +63,5 @@
                 </tr>
             @endforeach
         </table>
+    </html>
 @endsection
