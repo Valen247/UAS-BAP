@@ -58,14 +58,12 @@
             </nav><!-- .navbar -->
 
             <div class="header-social-links">
-                <a href="https://twitter.com/sisilia_marcela"
+                <a href="https://twitter.com/Valen247_"
                     class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.facebook.com/sisilia.tan.12"
+                <a href="https://www.facebook.com/Valen.vin.cia"
                     class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/sisilia_marcela/" class="instagram"><i
+                <a href="https://www.instagram.com/valencia_alvin99/" class="instagram"><i
                         class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/sisilia-marcela-442809217//" class="linkedin"><i
-                        class="bi bi-linkedin"></i></i></a>
             </div>
         </div>
 
