@@ -39,7 +39,7 @@
            </a>
          </li>
          <li class="nav-item">
-           <a href="admin/replacement-lounge" class="nav-link">
+           <a href="admin/usage_history" class="nav-link">
              <i class="nav-icon fas fa-file"></i>
              <p>
                Usage History

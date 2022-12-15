@@ -12,7 +12,7 @@ class CreateUsageHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('usage__histories', function (Blueprint $table) {
+        Schema::create('usage_history', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nama')->nullable();

@@ -29,7 +29,7 @@ class Usage_HistoryController extends Controller
             $usage_history = Usage_History::latest()->paginate($perPage);
         }
 
-        return view('admin.usage_-history.index', compact('usage_history'));
+        return view('admin.usage_history.index', compact('usage_history'));
     }
 
     /**
@@ -39,7 +39,7 @@ class Usage_HistoryController extends Controller
      */
     public function create()
     {
-        return view('admin.usage_-history.create');
+        return view('admin.usage_history.create');
     }
 
     /**
@@ -56,7 +56,7 @@ class Usage_HistoryController extends Controller
         
         Usage_History::create($requestData);
 
-        return redirect('admin/usage_-history')->with('flash_message', 'Usage_History added!');
+        return redirect('admin/usage_history')->with('flash_message', 'Usage_History added!');
     }
 
     /**
@@ -70,7 +70,7 @@ class Usage_HistoryController extends Controller
     {
         $usage_history = Usage_History::findOrFail($id);
 
-        return view('admin.usage_-history.show', compact('usage_history'));
+        return view('admin.usage_history.show', compact('usage_history'));
     }
 
     /**
@@ -84,7 +84,7 @@ class Usage_HistoryController extends Controller
     {
         $usage_history = Usage_History::findOrFail($id);
 
-        return view('admin.usage_-history.edit', compact('usage_history'));
+        return view('admin.usage_history.edit', compact('usage_history'));
     }
 
     /**
@@ -103,7 +103,7 @@ class Usage_HistoryController extends Controller
         $usage_history = Usage_History::findOrFail($id);
         $usage_history->update($requestData);
 
-        return redirect('admin/usage_-history')->with('flash_message', 'Usage_History updated!');
+        return redirect('admin/usage_history')->with('flash_message', 'Usage_History updated!');
     }
 
     /**
@@ -117,6 +117,6 @@ class Usage_HistoryController extends Controller
     {
         Usage_History::destroy($id);
 
-        return redirect('admin/usage_-history')->with('flash_message', 'Usage_History deleted!');
+        return redirect('admin/usage_history')->with('flash_message', 'Usage_History deleted!');
     }
 }
