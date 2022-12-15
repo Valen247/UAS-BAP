@@ -22,7 +22,8 @@
             UNIVERSITAS PELITA HARAPAN<br>
             MEDAN CAMPUS
         </h1>
-        <h5>Jalan. Imam Bonjol No. 1<br>
+        <h5>
+            Jalan. Imam Bonjol No. 1<br>
             Tlp. 061.68541656
         </h5>
         <br>

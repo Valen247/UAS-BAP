@@ -7,21 +7,21 @@
     <html>
         <body>
         <h1></h1>
-        <div class="media">
-        <img src='{{ asset("https://cdn.discordapp.com/attachments/873955007706300436/1052913723385335829/Logo-UPH-Universitas-Pelita-Harapan-Original-PNG.png") }}' alt="Logo UPH" class="img-size-50 img-circle mr-10"> 
-        <div class="media-body">
-        <h3 class="dropdown-item-title">
-        Name : Alvin Valencia
-        <h3 class="dropdown-item-title">
-        StudentID : 03081190020
-        <span class="float-right text-sm text-warning"></span>
-        </h3>
-        <p class="text-sm">19SI1 | Business Aplication Programming</p>
-        <p class="text-sm text-muted"><i class="far fa-file mr-1"></i> Final Exam Bussiness Aplication Programming</p>
-        </div>
-        </div>
-        <hr>
-        </html>
+            <div class="media">
+                <img src='{{ asset("https://cdn.discordapp.com/attachments/873955007706300436/1052913723385335829/Logo-UPH-Universitas-Pelita-Harapan-Original-PNG.png") }}' alt="Logo UPH" class="img-size-50 img-circle mr-10"> 
+                <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                        Name : Alvin Valencia
+                    </h3>
+                    <h3 class="dropdown-item-title">
+                        StudentID : 03081190020
+                    <span class="float-right text-sm text-warning"></span>
+                    </h3>
+                    <p class="text-sm">19SI1 | Business Aplication Programming</p>
+                    <p class="text-sm text-muted"><i class="far fa-file mr-1"></i> Final Exam Bussiness Aplication Programming</p>
+                </div>
+            </div>
+    </html>
         <style>
             body{
                 padding: 15px;
@@ -42,10 +42,11 @@
             <center>UNIVERSITAS PELITA HARAPAN<br></center>
         <br>
         </h1>
-        <h5>Jalan. Imam Bonjol No. 1<br>
+        <h5>
+            Jalan. Imam Bonjol No. 1<br>
             Tlp. 061.68541656
         </h5>
-        <hr>
+        <br>
         <center><h3>Laporan Mahasiswa</h3></center>
         <table>
             <tr>
@@ -63,5 +64,4 @@
                 </tr>
             @endforeach
         </table>
-    </html>
 @endsection
