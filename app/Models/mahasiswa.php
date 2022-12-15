@@ -11,7 +11,7 @@ class mahasiswa extends Model
      *
      * @var string
      */
-    protected $table = 'mahasiswa';
+    protected $table = 'mahasiswas';
 
     /**
     * The database primary key value.
