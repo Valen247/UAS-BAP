@@ -17,4 +17,4 @@ Folder personal yang saya tambahan adalah "Usage History" dimana terdapat data p
 5.  Simpan kode program beserta queryUAS.sql ke public repository github, tambahkan file readme.md yang berisikan:
 o   Nama dan StudentID.
 o   Soal dan penjelasan solusi untuk setiap soal beserta nama file yang berubah.
-- Telah saya jelaskan no.1 samapai dengan no.5. file queryUAS.sql saya upload ke github UAS saya.
+- Telah saya jelaskan no.1 samapai dengan no.5., file queryUAS.sql saya upload ke github UAS saya.
