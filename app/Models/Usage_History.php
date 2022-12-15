@@ -11,7 +11,7 @@ class Usage_History extends Model
      *
      * @var string
      */
-    protected $table = 'usage__histories';
+    protected $table = 'usage_history';
 
     /**
     * The database primary key value.
