@@ -31,7 +31,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src='{{ asset("adminlte/dist/img/AdminLTELogo.png") }}' alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src='{{ asset("https://cdn.discordapp.com/attachments/873955007706300436/1052913723385335829/Logo-UPH-Universitas-Pelita-Harapan-Original-PNG.png") }}' alt="UPHLogo" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -176,7 +176,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src='{{ asset("adminlte/dist/img/AdminLTELogo.png") }}' alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src='{{ asset("https://cdn.discordapp.com/attachments/873955007706300436/1052913723385335829/Logo-UPH-Universitas-Pelita-Harapan-Original-PNG.png") }}' alt="UPH Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Lounge Booking</span>
     </a>
 
