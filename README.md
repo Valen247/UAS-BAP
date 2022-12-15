@@ -9,7 +9,7 @@ Folder personal yang saya tambahan adalah "Usage History" dimana terdapat data p
 - Sesuai dengan final project, view analisis data tersebut adalah data-data mahasiswa dari final project.
 
 3.  Buatlah sebuah antarmuka untuk menampilkan view pada soal 2, kemudian tambahkan tombol untuk mencetaknyakedalam format laporan pdf. Sertakan logo UPH dan nama berserta studentID anda pada header laporan.
-- Untuk DompPDF, saya membuat codingnya pada bagian config/app.php dengan code "Barryvdh\DomPDF\ServiceProvider::class," serta memberikan "'PDF'=> Barryvdh\DomPDF\Facade::class," pada bagian allies, untuk nama dan studentID saya, saya membuatnya pada folder resources/views/Laporan.
+- Untuk DompPDF, saya membuat codingnya pada bagian config/app.php dengan code "Barryvdh\DomPDF\ServiceProvider::class," serta memberikan "'PDF'=> Barryvdh\DomPDF\Facade::class," pada bagian aliases, untuk nama dan studentID saya, saya membuatnya pada folder resources/views/Laporan.
 
 4.  Buat validasi data untuk halaman insert dan update soal nomor 1.
 - Setelah revisi semua halaman CRUD sudah benar.
