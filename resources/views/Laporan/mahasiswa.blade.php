@@ -18,7 +18,7 @@
                     <span class="float-right text-sm text-warning"></span>
                     </h3>
                     <p class="text-sm">19SI1 | Business Aplication Programming</p>
-                    <p class="text-sm text-muted"><i class="far fa-file mr-1"></i> Final Exam Bussiness Aplication Programming</p>
+                    <p class="text-sm text-muted"><i class="far fa-file mr-1"></i> Final Exam Business Aplication Programming</p>
                 </div>
             </div>
     </html>

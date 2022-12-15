@@ -51,7 +51,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('admin/replacement-lounge', 'App\\Http\\Controllers\\Admin\replacementLoungeController');
+Route::resource('admin/usage__histories', 'App\\Http\\Controllers\\Admin\Usage_HistoryController');
 
 Route::get('/laporan/mahasiswa',[LaporanController::class,'index']);
 Route::get('/laporan/mahasiswa/pdf',[LaporanController::class,'cetak_pdf']);
+Route::resource('admin/usage_-history', 'App\Http\Controllers\Admin\Usage_HistoryController');
