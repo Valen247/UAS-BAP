@@ -28,6 +28,6 @@ class CreateUsageHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('usage__histories');
+        Schema::drop('usage_history');
     }
 }
