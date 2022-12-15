@@ -42,7 +42,7 @@
            <a href="admin/replacement-lounge" class="nav-link">
              <i class="nav-icon fas fa-file"></i>
              <p>
-               Replacement Lounge
+               Usage History
               </p>
            </a>
          </li>
