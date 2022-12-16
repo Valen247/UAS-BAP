@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Usage_History extends Model
+class usage_history extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'usage_history';
+    protected $table = 'usage_histories';
 
     /**
     * The database primary key value.

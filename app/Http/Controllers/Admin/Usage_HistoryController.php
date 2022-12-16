@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
-use App\Models\Usage_History;
+use App\Models\usage_history;
 use Illuminate\Http\Request;
 
-class Usage_HistoryController extends Controller
+class usage_historyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,12 +21,12 @@ class Usage_HistoryController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $usage_history = Usage_History::where('nama', 'LIKE', "%$keyword%")
+            $usage_history = usage_history::where('nama', 'LIKE', "%$keyword%")
                 ->orWhere('date', 'LIKE', "%$keyword%")
                 ->orWhere('time', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
-            $usage_history = Usage_History::latest()->paginate($perPage);
+            $usage_history = usage_history::latest()->paginate($perPage);
         }
 
         return view('admin.usage_history.index', compact('usage_history'));
@@ -54,9 +54,9 @@ class Usage_HistoryController extends Controller
         
         $requestData = $request->all();
         
-        Usage_History::create($requestData);
+        usage_history::create($requestData);
 
-        return redirect('admin/usage_history')->with('flash_message', 'Usage_History added!');
+        return redirect('admin/usage_history')->with('flash_message', 'usage_history added!');
     }
 
     /**
@@ -68,7 +68,7 @@ class Usage_HistoryController extends Controller
      */
     public function show($id)
     {
-        $usage_history = Usage_History::findOrFail($id);
+        $usage_history = usage_history::findOrFail($id);
 
         return view('admin.usage_history.show', compact('usage_history'));
     }
@@ -82,7 +82,7 @@ class Usage_HistoryController extends Controller
      */
     public function edit($id)
     {
-        $usage_history = Usage_History::findOrFail($id);
+        $usage_history = usage_history::findOrFail($id);
 
         return view('admin.usage_history.edit', compact('usage_history'));
     }
@@ -100,10 +100,10 @@ class Usage_HistoryController extends Controller
         
         $requestData = $request->all();
         
-        $usage_history = Usage_History::findOrFail($id);
+        $usage_history = usage_history::findOrFail($id);
         $usage_history->update($requestData);
 
-        return redirect('admin/usage_history')->with('flash_message', 'Usage_History updated!');
+        return redirect('admin/usage_history')->with('flash_message', 'usage_history updated!');
     }
 
     /**
@@ -115,8 +115,8 @@ class Usage_HistoryController extends Controller
      */
     public function destroy($id)
     {
-        Usage_History::destroy($id);
+        usage_history::destroy($id);
 
-        return redirect('admin/usage_history')->with('flash_message', 'Usage_History deleted!');
+        return redirect('admin/usage_history')->with('flash_message', 'usage_history deleted!');
     }
 }

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Usage')
+@section('title','history')
 
 @section('content')
     <div class="container">
@@ -10,11 +10,11 @@
                 <div class="card">
                     <div class="card-header">Usage_history</div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/usage_-history/create') }}" class="btn btn-success btn-sm" title="Add New Usage_History">
+                        <a href="{{ url('/admin/usage_history/create') }}" class="btn btn-success btn-sm" title="Add New usage_history">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        <form method="GET" action="{{ url('/admin/usage_-history') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+                        <form method="GET" action="{{ url('/admin/usage_history') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
                                 <span class="input-group-append">
@@ -40,13 +40,13 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->nama }}</td><td>{{ $item->date }}</td><td>{{ $item->time }}</td>
                                         <td>
-                                            <a href="{{ url('/admin/usage_-history/' . $item->id) }}" title="View Usage_History"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/admin/usage_-history/' . $item->id . '/edit') }}" title="Edit Usage_History"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                            <a href="{{ url('/admin/usage_history/' . $item->id) }}" title="View usage_history"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ url('/admin/usage_history/' . $item->id . '/edit') }}" title="Edit usage_history"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
-                                            <form method="POST" action="{{ url('/admin/usage_-history' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ url('/admin/usage_history' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Usage_History" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete usage_history" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
                                         </td>
                                     </tr>

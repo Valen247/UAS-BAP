@@ -12,7 +12,7 @@ class CreateUsageHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('usage_history', function (Blueprint $table) {
+        Schema::create('usage_histories', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nama')->nullable();
@@ -28,6 +28,6 @@ class CreateUsageHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('usage_history');
+        Schema::drop('usage_histories');
     }
 }

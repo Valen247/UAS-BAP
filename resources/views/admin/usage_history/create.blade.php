@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Usage')
+@section('title','history')
 
 @section('content')
     <div class="container">
@@ -8,9 +8,9 @@
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Create New Usage_History</div>
+                    <div class="card-header">Create New usage_history</div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/usage_-history') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/admin/usage_history') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <br />
                         <br />
 
@@ -22,10 +22,10 @@
                             </ul>
                         @endif
 
-                        <form method="POST" action="{{ url('/admin/usage_-history') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+                        <form method="POST" action="{{ url('/admin/usage_history') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
-                            @include ('admin.usage_-history.form', ['formMode' => 'create'])
+                            @include ('admin.usage_history.form', ['formMode' => 'create'])
 
                         </form>
 
